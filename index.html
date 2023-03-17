@@ -10,6 +10,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
     <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts" ></script>
 </head>
 <body>
     <main class="main">
@@ -17,7 +18,7 @@
             <h2>Conversor de Moedas</h2>
             <div class="wrapper">
                 <div class="money-wrapper">
-                    <input type="text" class="amount" value="1.000">
+                    <input type="text" class="amount" value="$ 1.000">
                     <div class="dropdown">
                         <div class="selected">
                             <span class="fi fi-us fis"></span>
@@ -38,14 +39,45 @@
                     </div>
 
                 </div>
-                <div class="middle"></div>
-                <div class="money-wrapper"></div>
+                <div class="middle">
+                    <img src="./assets/arrows-exchange.svg" alt="trocar moeda" srcset="">
+                </div>
+                <div class="money-wrapper">
+                    <input readonly type="text" class="amount" value="R$ 5.148,20">
+                    <div class="dropdown">
+                        <div class="selected">
+                            <span class="fi fi-br fis"></span>
+                            USD
+                        </div>
+                        <ul>
+                
+                            <li>
+                                <span class="fi fi-br fis"></span>BRL
+                            </li>
+                            <li>
+                                <span class="fi fi-us fis"></span>USD
+                            </li>
+                            <li>
+                                <span class="fi fi-eu fis"></span>EUR
+                            </li>
+                            <li>
+                                <span class="fi fi-gb fis"></span>GBP
+                            </li>
+                        </ul>
+                
+                    </div>
+                
+                </div>
             </div>
         </section>
 
         <section class="cambio">
             <h2>Taxa de Câmbio</h2>
-            <div class="wrapper"></div>
+            <div class="wrapper">
+                <div id="chart">
+                    
+                </div>
+            </div>
         </section>
     </main>
 </body>
