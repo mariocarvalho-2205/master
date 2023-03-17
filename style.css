@@ -126,9 +126,6 @@ section h2 {
     background: url(./assets/chevron-down.svg) no-repeat;
 }
 
-li:hover {
-    
-}
 
 .selected:hover {
     background-color: var(--bg-hover);
